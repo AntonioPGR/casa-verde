@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "label": "Como fazer",
+    "linkTo": "/"
+  },
+  {
+    "id": 2,
+    "label":"Ofertas",
+    "linkTo":"/"
+  },
+  {
+    "id": 3,
+    "label":"Depoimentos",
+    "linkTo":"/"
+  },
+  {
+    "id": 4,
+    "label":"Videos",
+    "linkTo":"/"
+  },
+  {
+    "id": 5,
+    "label":"Meu Carrinho",
+    "linkTo":"/"
+  }
+]
