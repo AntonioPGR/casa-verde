@@ -1,4 +1,5 @@
 import MenuLinks from "data/linksMenu.json";
+import { Menu__ListaDeLinks } from "./menu__estilo";
 
 const Menu = () => {
 
@@ -6,7 +7,7 @@ const Menu = () => {
 
   return(
     <nav>
-      <ul>
+      <Menu__ListaDeLinks>
         {
           links.map((value) => 
             <li key={value.id}>
@@ -14,7 +15,7 @@ const Menu = () => {
             </li>
           )
         }
-      </ul>
+      </Menu__ListaDeLinks>
     </nav>
   );
 

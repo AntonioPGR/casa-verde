@@ -7,25 +7,23 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "*.pdf": true,
-    "node_modules": true,
-    "public": true,
     ".vscode": true,
     "yarn.lock": true,
     "package.json": true,
     ".gitignore": true,
     "README.md": true,
     ".eslintrc.json": true,
-    "tsconfig.json": true
+    "tsconfig.json": true,
+    "node_modules": true
   },
   "hide-files.files": [
-    "node_modules",
-    "public",
     ".vscode",
     "yarn.lock",
     "package.json",
     ".gitignore",
     "README.md",
     ".eslintrc.json",
-    "tsconfig.json"
+    "tsconfig.json",
+    "node_modules"
   ]
 }
