@@ -4,10 +4,18 @@ const NewsLetterStyled = styled.section`
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1rem;
-  max-height: 100vh;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
 
   > *{
     max-height: 100vh;
+  }
+
+  @media screen and (max-width: 1300px) {
+    display: block;
+    padding: 3rem;
   }
 `;
 
@@ -55,6 +63,10 @@ const Imagem = styled.div`
   img{
     max-height: 100%;
     overflow: hidden;
+  }
+
+  @media screen and (max-width: 1300px) {
+    display: none;
   }
 
 `;

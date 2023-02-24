@@ -8,6 +8,7 @@ const HeaderStyled = styled.header`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 `;
 
 export {HeaderStyled};
