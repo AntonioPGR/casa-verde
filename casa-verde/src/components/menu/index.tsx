@@ -1,5 +1,5 @@
 import MenuLinks from "data/linksMenu.json";
-import { Menu__ListaDeLinks } from "./menu__estilo";
+import { Menu__ListaDeLinks } from "./styled";
 
 const Menu = () => {
 

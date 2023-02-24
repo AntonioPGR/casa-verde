@@ -11,8 +11,8 @@ const InputStyled = styled.input`
 const ButtonStyled = styled.button`
   padding: 20px;
   font-family: 'Montserrat';
-  background: rgba(255, 203, 71, 1);
-  color: rgba(255, 255, 255, 1);
+  background: ${props => props.disabled? "rgba(236, 236, 236)": "rgba(255, 203, 71, 1)"};
+  color: ${ props => props.disabled? "rgba(108, 122, 137)":"rgba(255, 255, 255, 1)"};
 
 `;
 

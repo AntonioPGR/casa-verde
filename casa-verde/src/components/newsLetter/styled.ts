@@ -19,15 +19,30 @@ const Conteudo = styled.div`
   justify-content: center;
 `;
 
-const Formulario = styled.form`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: start;
-  box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+const FormularioStyled = styled.form`
+  .input{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: start;
 
-  span {
-    padding: 20px;
+    span {
+      padding: 20px;
+    }
+  }
+
+  .mensagemErro{
+    color: rgba(217, 30, 24);
+    margin-bottom: 10px;
+
+    ::before{
+      content: "*";
+    }
+  }
+
+  .mensagemSucesso{
+    margin-top: 10px;
+    color: rgba(225, 183, 40, 1);
   }
 
 `;
@@ -44,4 +59,4 @@ const Imagem = styled.div`
 
 `;
 
-export { NewsLetterStyled, Conteudo, Imagem, Formulario};
+export { NewsLetterStyled, Conteudo, Imagem, FormularioStyled};
