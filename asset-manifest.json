@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/casa-verde/static/js/main.b727f0a3.js",
+    "static/media/arvore-no-vaso.png": "/casa-verde/static/media/arvore-no-vaso.88ae4596c18cb9fb84bc.png",
+    "static/media/logo.svg": "/casa-verde/static/media/logo.9654fc3277e363736590967fca115e75.svg",
+    "index.html": "/casa-verde/index.html",
+    "main.b727f0a3.js.map": "/casa-verde/static/js/main.b727f0a3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b727f0a3.js"
+  ]
+}
