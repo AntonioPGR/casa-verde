@@ -61,7 +61,7 @@ const Imagem = styled.div`
   justify-content: center;
   align-items: center;
   img{
-    max-height: 100%;
+    max-height: 100vh;
     overflow: hidden;
   }
 
