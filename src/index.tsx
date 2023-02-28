@@ -2,7 +2,7 @@
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 // COMPONENTES
-import App from "app";
+import Home from "pages/home";
 // ESTILO
 import { GlobalStyle } from "styles/globalStyle";
 
@@ -11,6 +11,6 @@ const root = createRoot(container);
 root.render(
   <StrictMode>
     <GlobalStyle />
-    <App />
+    <Home />
   </StrictMode>
 );

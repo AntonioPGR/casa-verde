@@ -1,21 +1,23 @@
 // COMPONENTES
 import Cabecalho from "components/cabecalho";
 import Conteudo from "components/conteudo";
+import Instrucoes from "components/instrucoes";
 import Ofertas from "components/ofertas";
 
 // ESTILO
-import { AppStyled } from "app__estilo";
+import { AppStyled } from "pages/home/styled";
 
-const App = () => {
+const Home = () => {
 
   return(
     <AppStyled>
       <Cabecalho />
       <Conteudo />
+      <Instrucoes />
       <Ofertas />
     </AppStyled>
   );
 
 };
 
-export default App;
+export default Home;

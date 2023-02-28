@@ -1,9 +1,10 @@
 import useGetPlantasEmOferta from "hooks/useGetPlantasEmOferta";
 import { useEffect, useState } from "react";
 import { Link, Paragrafo, TituloSecundario } from "styles/textos";
-import { Card, ImageWrapper, ListaDeItens, TextContainer } from "./styled";
+import { ListaDeItens} from "./styled";
 
 import PlantaIMG from "imgs/planta.jpg";
+import Card from "components/card";
 
 const ListaDeOfertas = () => {
 
@@ -21,7 +22,7 @@ const ListaDeOfertas = () => {
         }
         setOfertas(plantas);
       });
-  });
+  }, []);
 
 
   return(
@@ -29,15 +30,20 @@ const ListaDeOfertas = () => {
       {
         ofertas.map((value) => {
           return (
-            <Card key={value.id} >
-              <ImageWrapper>
-                <img src={PlantaIMG} alt="" />
-              </ImageWrapper>
-              <TextContainer>
-                <TituloSecundario secondary align="left"> {value.name} </TituloSecundario>
-                <Paragrafo> {value.preco.toLocaleString("pt-br", {currency: "BRL", minimumFractionDigits: 2, style:"currency"})} </Paragrafo>
-                <Link secondary href="#"> Ver oferta </Link>
-              </TextContainer>
+            <Card 
+              card={{
+                maxWidth: "350px"
+              }}
+              image={{
+                height: "150px",
+                width: "150px",
+                src: PlantaIMG
+              }} 
+              key={value.id} 
+            >
+              <TituloSecundario secondary align="left"> {value.name} </TituloSecundario>
+              <Paragrafo> {value.preco.toLocaleString("pt-br", {currency: "BRL", minimumFractionDigits: 2, style:"currency"})} </Paragrafo>
+              <Link secondary href="#"> Ver oferta </Link>
             </Card>
           );
         })
