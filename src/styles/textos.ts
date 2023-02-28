@@ -1,47 +1,56 @@
 import styled from "styled-components";
 
-interface TituloProps {
-  align: "center" | "left" | "right"
+interface TextProps {
+  align?: "center" | "left" | "right",
+  secondary?: boolean
 }
-const TituloPrincipal = styled.h1<TituloProps>`
+const TituloPrincipal = styled.h1<TextProps>`
   font-family: 'Elsie Swash Caps';
   font-style: normal;
   font-weight: 900;
-  font-size: 82px;
+  font-size: 5.125rem;
   line-height: 94px;
   text-align: ${props => props.align};
 `;
 
-interface H2Props {
-  primary: boolean
-}
-const TituloSecundario = styled.h2<H2Props>`
+const TituloSecundario = styled.h2<TextProps>`
   font-family: 'Elsie Swash Caps';
   font-style: normal;
   font-weight: 900;
-  font-size: ${props => props.primary? "42px" : "32px"};
-  line-height: 37px;
+  font-size: ${props => props.secondary? "1.5rem" : "2.625rem"};
+  text-align: ${props => props.align};
+  line-height: 2.4rem;
   color: #202020;
 `;
 
-const Subtitulo = styled.h3<TituloProps>`
+const Subtitulo = styled.h3<TextProps>`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
   text-align:  ${props => props.align};
 `;
 
-const Paragrafo = styled.p`
+const Paragrafo = styled.p<TextProps>`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: ${props => props.secondary? "1.5rem" : "1rem"};
+  line-height: 1.7rem;
   color: #202020;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  text-align:  ${props => props.align};
+`;
+
+const Link = styled.a<TextProps>`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: ${props => props.secondary? "#FFCB47" : "#000"};
 `;
 
 
-export { TituloPrincipal, TituloSecundario, Subtitulo, Paragrafo };
+export { TituloPrincipal, TituloSecundario, Subtitulo, Paragrafo, Link };

@@ -1,0 +1,46 @@
+{
+  "ofertas": [
+    {
+      "name": "Ajuga Reptans",
+      "id": "1",
+      "preco": 20,
+      "img": "ajuga01_card",
+      "estoque": 10
+    },
+    {
+      "name": "Cordyline fruticosa",
+      "id": "2",
+      "preco": 35,
+      "img": "fruticosa01_card",
+      "estoque": 3
+    },
+    {
+      "name": "Crassula ovata",
+      "id": "3",
+      "preco": 23.2,
+      "img": "ovata01_card",
+      "estoque": 5
+    },
+    {
+      "name": "Datura metel",
+      "id": "4",
+      "preco": 23.2,
+      "img": "ovata01_card",
+      "estoque": 2
+    },
+    {
+      "name": "Delairea odorata",
+      "id": "5",
+      "preco": 23.2,
+      "img": "ovata01_card",
+      "estoque": 0
+    },
+    {
+      "name": "Cyperus rotundus",
+      "id": "6",
+      "preco": 23.2,
+      "img": "ovata01_card",
+      "estoque": 8
+    }
+  ]
+}
